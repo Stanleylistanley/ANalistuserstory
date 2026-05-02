@@ -16,4 +16,26 @@ Relatie tot code: In onze huidige situatie hebben we al alle producten van Harm 
 
 ## Knelpunt
 
-###
+### Product toevoegen
+
+Als beheerder wil ik een formulier kunnen invullen om een nieuw product toe te voegen, zodat het product wordt opgeslagen in het systeem
+
+### Subcategorie selecteren
+
+Als beheerder wil ik een subcategorie kunnen selecteren bij het toevoegen van een product, zodat het product correct wordt gecategoriseerd
+
+### Locatie selecteren
+
+Als beheerder wil ik een opslaglocatie kunnen selecteren, zodat duidelijk is waar het product zich bevindt
+
+### Extra productinformatie
+
+Als beheerder wil ik extra informatie(beschrijving, afbeelding, details en URl's) kunnen toevoegen, zodat producten duidelijker gepresenteerd worden
+
+### Validatie van invoer
+
+Als beheerder wil ik feedback krijgen bij foutieve invoer, zodat ik weet wat ik moet corrigeren voordat het product wordt opgeslagen.
+
+### Product opslaan
+
+Als beheerder wil ik het product kunnen opslaan, zodat het definitief wordt toegevoegd aan het systeem.
