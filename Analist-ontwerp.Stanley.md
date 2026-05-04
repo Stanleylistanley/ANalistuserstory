@@ -78,15 +78,24 @@ Postcondities: Het product is succesvol opgeslagen in de database en is zichtbaa
 ### Toestandsdiagram
 <img width="615" height="641" alt="image" src="https://github.com/user-attachments/assets/bdcf90df-4889-4de0-b27a-211f304daef1" />
 
+Koppeling met user story
+- Nieuw -> valideren -> opgeslagen = product succesvol toegevoegd
+- Valideren -> Fout -> Nieuw = Validatie van invoer
+
 Toestandstabel
 | Toestand | Betekenis | Conditie | 
 |----------|-----------|----------|
 |   nieuw       | formulier is ingevuld en klaar om een nieuw product te zijn       |     invoer nog niet gevalideerd     |
-|          |           |          |
-|          |           |          |
+|  valideren        |   Systeem controleert invoer        |    Opslaan actie is uitgevoerd      |
+|  Fout        |  invoer is ongeldig         |    foute invoer van bijv. lege naam      |
+| Opgeslagen         |   product is succesvol opgeslagen        |    Product staat in database      |
+
+
 
 ### wireframe
-
+###
+###
+###
 
 
 
