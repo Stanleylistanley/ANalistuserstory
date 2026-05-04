@@ -16,15 +16,76 @@ Relatie tot code: In onze huidige situatie hebben we al alle producten van Harm 
 
 ## Knelpunt
 
-### Producten toevoegen
+## Producten toevoegen
 Als beheerder wil ik nieuwe producten kunnen toevoegen via de applicatie, zodat de productcatalogus actueel blijft.
 
-**Acceptatiecriteria**
-**Scenarios**
-**Use Case**
-**Domeinmodel**
-**Toestandsdiagram**
-**Wireframe**
+### Acceptatiecriteria
+- [ ] Basisinformatie heeft
+      - Naam
+      - Prijs
+      - Categorie 
+      - Plaats(locatie)
+      **Deze zijn verplicht**
+- [ ] Categorie Bestaat uit Main/sub. Bijv Components/Resistors
+- [ ] Bij locatie moet een shortcode worden ingevuld die automatisch
+- [ ] Er is een "product opslaan" en "annuleer" knop
+- [ ] Product wordt succesvol in de database opgeslagen
+- [ ] na het succesvol opslaan toont er een bevestinging popup
+- [ ] Product is daarna zichtbaar via de API(GET/products)
+- [ ] Er zijn foutmeldingen bij ongeldige invoer. bijvoorbeeld bij categorie en locatie.
+
+### Scenarios
+
+Scenario 1 - Succesvol product toevoegen
+**Gegeven** de beheerder vult alle verplichte velden correct in
+**Wanneer** de beheerder op "Product opslaan" klikt
+**Dan** wordt het product opgeslagen in de database
+**En** verschijnt het product in het producten overzicht
+
+Scenario 2 - Verplichte velden ontbreken
+**Gegeven** de beheerder laat verplichte velden leeg
+**Wanneer** de beheerder probeert op te slaan
+**Dan** krijgt de beheerder foutmeldingen
+**En** Wordt het product niet opgeslagen
+
+
+### Use Case
+
+Titel: Product toevoegen
+Doel: Beheerder kan via de applicatie producten toevoegen aan het systeem zonder in de code te hoeven duiken.
+Actor: Beheerder
+
+Precondities:
+- Beheerder is ingelogd
+- Beheerder wilt een product toevoegen
+
+Stappen:
+- Beheerder opent de "producten toevoegen" pagina via de knop bij de productenoverzicht
+- Beheerder vult de minimale verplichte velden in
+- Beheerder vult de optionele velden in zo nodig
+- Beheerder klikt op "product opslaan"
+- Systeem valideert invoer
+- Systeem slaat product op in database
+- Systeem toont bevestiging
+
+Alternatieve paden:
+- Invoer ongeldig -> foutmelding -> terug naar formulier
+
+Postcondities: Het product is succesvol opgeslagen in de database en is zichtbaar in het producten overzicht.
+
+
+### Domeinmodel
+### Toestandsdiagram
+<img width="615" height="641" alt="image" src="https://github.com/user-attachments/assets/bdcf90df-4889-4de0-b27a-211f304daef1" />
+
+Toestandstabel
+| Toestand | Betekenis | Conditie | 
+|----------|-----------|----------|
+|   nieuw       | formulier is ingevuld en klaar om een nieuw product te zijn       |     invoer nog niet gevalideerd     |
+|          |           |          |
+|          |           |          |
+
+### wireframe
 
 
 
