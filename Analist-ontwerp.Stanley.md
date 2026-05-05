@@ -34,6 +34,22 @@ Als beheerder wil ik nieuwe producten kunnen toevoegen via de applicatie, zodat 
 - [ ] Product is daarna zichtbaar via de API(GET/products)
 - [ ] Er zijn foutmeldingen bij ongeldige invoer. bijvoorbeeld bij categorie en locatie.
 
+### Definition of ready (DoR)
+- [ ] User story is duidelijk beschreven
+- [ ] Acceptatie criteria zijn opgesteld
+- [ ] Wireframe is opgesteld en gecheckt door team
+- [ ] Benodigde velden zijn duidelijk
+- [ ] Benodigde Backend requirements zijn bekend
+
+### Definition of done (DoD)
+- [ ] Beheerder kan succesvol een product toevoegen via applicatie
+- [ ] Validatie werkt correct
+- [ ] Product wordt in database opgeslagen
+- [ ] product is zichtbaar via API
+- [ ] Functionaliteit is getest
+
+
+
 ### Scenarios
 
 Scenario 1 - Succesvol product toevoegen
@@ -93,9 +109,7 @@ Toestandstabel
 
 
 ### wireframe
-###
-###
-###
+<img width="1048" height="483" alt="image" src="https://github.com/user-attachments/assets/eb5b38d0-3ad0-46c8-a37f-caca6a548467" />
 
 
 
