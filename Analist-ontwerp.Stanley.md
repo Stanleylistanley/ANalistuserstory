@@ -37,16 +37,16 @@ Als beheerder wil ik nieuwe producten kunnen toevoegen via de applicatie, zodat 
 ### Scenarios
 
 Scenario 1 - Succesvol product toevoegen
-**Gegeven** de beheerder vult alle verplichte velden correct in
-**Wanneer** de beheerder op "Product opslaan" klikt
-**Dan** wordt het product opgeslagen in de database
-**En** verschijnt het product in het producten overzicht
+- **Gegeven** de beheerder vult alle verplichte velden correct in
+- **Wanneer** de beheerder op "Product opslaan" klikt
+- **Dan** wordt het product opgeslagen in de database
+- **En** verschijnt het product in het producten overzicht
 
 Scenario 2 - Verplichte velden ontbreken
-**Gegeven** de beheerder laat verplichte velden leeg
-**Wanneer** de beheerder probeert op te slaan
-**Dan** krijgt de beheerder foutmeldingen
-**En** Wordt het product niet opgeslagen
+- **Gegeven** de beheerder laat verplichte velden leeg
+- **Wanneer** de beheerder probeert op te slaan
+- **Dan** krijgt de beheerder foutmeldingen
+- **En** Wordt het product niet opgeslagen
 
 
 ### Use Case
