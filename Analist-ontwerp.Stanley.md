@@ -119,14 +119,94 @@ Toestandstabel
 Als beheerder wil ik bestaande producten kunnen aanpassen, zodat ik fouten kan corrigeren of informatie kan bijwerken
 
 ### Accepatatiecriteria
-### Definition of ready (DoR)
-### Definition of done (DoD)
-### Scenarios
-### Use Case
-### Domeinmodel
-### Toestandsdiagram
-### Wireframe
+- [ ] Beheerder kan een bestaand product selecteren
+- [ ] Beheerder wordt doorgestuurd naar het formulier zelfde als bij het aanmaken van een product
+- [ ] De velden zijn ingevuld met de informatie van het geselecteerde product
+- [ ] Naam, prijs, subcategorie en locatie blijven verplicht
+- [ ] Wijzigingen worden succesvol opgeslagen in de database
+- [ ] na het succesvol opslaan toont er een bevestinging popup
+- [ ] Product is daarna zichtbaar via de API(GET/products)
+- [ ] Er zijn foutmeldingen bij ongeldige invoer. bijvoorbeeld bij categorie en locatie.
 
+
+### Definition of ready (DoR)
+- [ ] User story is duidelijk beschreven
+- [ ] Acceptatie criteria zijn opgesteld
+- [ ] Wireframe is opgesteld en gecheckt door team
+- [ ] Benodigde velden zijn duidelijk
+- [ ] Benodigde Backend requirements zijn bekend
+
+### Definition of done (DoD)
+- [ ] Beheerder kan succesvol een product aanpassen via de applicatie
+- [ ] Validatie werkt correct
+- [ ] Product wordt in database opgeslagen
+- [ ] product aanpassingen zijn zichtbaar via API
+- [ ] Functionaliteit is getest
+
+### Scenarios
+
+Scenario 1 - Succesvol product aanpassen
+- **Gegeven** een bestaand product is geselecteerd
+- **Wanneer** de beheerder gegevens wijzigt en opslaat
+- **Dan** wordem de wijzigingen opgeslagen in de database
+- **En** zijn de wijzigingen zichtbaar in de applicatie
+
+- Scenario 2 - Ongeldige invoer
+- **Gegeven** de beheerder voert ongeldige gegevens in 
+- **Wanneer** de beheerder probeert op te slaan
+- **Dan** krijgt de beheerder een foutmelding
+- **En** worden de wijzigingen niet doorgevoerd
+
+
+### Use Case
+Titel: Product aanpassen
+Doel: Beheerder kan via de applicatie producten aanpassen zonder in de code te hoeven duiken.
+Actor: Beheerder
+
+Precondities:
+- Beheerder is ingelogd
+- Product bestaat al in het systeem
+
+Stappen:
+- Beheerder opent productenoverzicht
+- Beheerder selecteert een product
+- Systeem toont huidige productgegevens
+- Beheerder past één of meerdere velden aan
+- Beheerder klikt op "opslaan"
+- Systeem valideert invoer
+- Systeem slaat wijzigingen op
+- Systeem toont bevestiging
+
+Alternatieve paden:
+- Invoer ongeldig -> foutmelding -> terug naar formulier
+
+Postcondities: De aanpassingen zijn succesvol opgeslagen in de database en zijn zichtbaar in het producten overzicht.
+
+
+### Domeinmodel
+-
+### Toestandsdiagram
+<img width="503" height="684" alt="image" src="https://github.com/user-attachments/assets/3d90f7a4-5ef1-4dfb-896d-42e99bb73683" />
+
+Koppeling met user story
+- Bestaand -> Bewerken -> Valideren -> bijgewerkt = product aanpassen
+- Valideren -> Fout -> Bewerken = Validatie van invoer
+
+Toestandstabel
+| Toestand | Betekenis | Conditie | 
+|----------|-----------|----------|
+|  Bestaand       | Product staat in database      |     Product heeft geen lopende wijzigingen     |
+|  Bewerken       |   Product wordt aangepast door beheerder       |    Wijzigingen zijn ingevoerd maar nog niet opgeslagen      |
+|  Valideren       |  Systeem controleert gewijzigde invoer        |   Opslaan actie uitgevoerd   |
+| Fout       |   Invoer is ongeldig      |  validatie faalt      |
+| Bijgewerkt        |  Product is succesvol aangepast       |    wijzigingen opgeslagen in database   |
+
+
+
+
+### Wireframe
+<img width="951" height="552" alt="image" src="https://github.com/user-attachments/assets/eb8c6de4-3c70-4c4b-b0d7-898541010a32" />
+Bij het klikken op de 3 puntjes moet er een popup te voorschijnkomen waarbij je op bewerken kunt klikken, daarna wordt je naar het bewerk formulier gestuurd
 
 ### Producten verwijderen
 Als beheerder wil ik producten kunnen verwijderen, zodat verouderde of niet op voorraad producten niet meer zichtbaar zijn.
