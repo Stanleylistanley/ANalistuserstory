@@ -118,7 +118,25 @@ Toestandstabel
 ### Product aanpassen
 Als beheerder wil ik bestaande producten kunnen aanpassen, zodat ik fouten kan corrigeren of informatie kan bijwerken
 
+### Accepatatiecriteria
+### Definition of ready (DoR)
+### Definition of done (DoD)
+### Scenarios
+### Use Case
+### Domeinmodel
+### Toestandsdiagram
+### Wireframe
+
+
 ### Producten verwijderen
 Als beheerder wil ik producten kunnen verwijderen, zodat verouderde of niet op voorraad producten niet meer zichtbaar zijn.
 
+### Accepatatiecriteria
+### Definition of ready (DoR)
+### Definition of done (DoD)
+### Scenarios
+### Use Case
+### Domeinmodel
+### Toestandsdiagram
+### Wireframe
 
