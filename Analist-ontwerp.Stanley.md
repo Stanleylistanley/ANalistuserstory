@@ -115,7 +115,7 @@ Toestandstabel
 
 
 
-### Product aanpassen
+## Product aanpassen
 Als beheerder wil ik bestaande producten kunnen aanpassen, zodat ik fouten kan corrigeren of informatie kan bijwerken
 
 ### Accepatatiecriteria
@@ -208,15 +208,90 @@ Toestandstabel
 <img width="951" height="552" alt="image" src="https://github.com/user-attachments/assets/eb8c6de4-3c70-4c4b-b0d7-898541010a32" />
 Bij het klikken op de 3 puntjes moet er een popup te voorschijnkomen waarbij je op bewerken kunt klikken, daarna wordt je naar het bewerk formulier gestuurd
 
-### Producten verwijderen
+## Producten verwijderen
 Als beheerder wil ik producten kunnen verwijderen, zodat verouderde of niet op voorraad producten niet meer zichtbaar zijn.
 
 ### Accepatatiecriteria
+- [ ] Beheerder kan een bestaand product selecteren via de 3 stipjes
+- [ ] Systeem vraagt om bevestiging voordat het product wordt verwijderd
+- [ ] Produt wordt verwijderd uit database
+- [ ] Verwijderd product is niet meer zichtbaar via API
+- [ ] Beheerder ontvangt een bevestiging na het verwijderen
+- [ ] Als het op één of andere manier niet lukt om te verwijderen krijg de beheeerder daar ook een foutmelding van
+
+
 ### Definition of ready (DoR)
+- [ ] User story is duidelijk beschreven
+- [ ] Acceptatie criteria zijn opgesteld
+- [ ] Wireframe is opgesteld en gecheckt door team
+- [ ] Productoverzicht is beschikbaar
+- [ ] Benodigde Backend requirements zijn bekend
+
 ### Definition of done (DoD)
+- [ ] Beheerder kan succesvol een product verwijderen via applicatie
+- [ ] Bevestigingsmelding/foutmeldingen werken correct
+- [ ] Product wordt verwijderd uit database
+- [ ] product is niet meer zichtbaar via API
+- [ ] Functionaliteit is getest
+
+
 ### Scenarios
+Scenario 1 - Succesvol product verwijderen
+- **Gegeven** een bestaand product is geselecteerd
+- **Wanneer** de beheerder de verwijderactie bevestigt
+- **Dan** wordt het product verwijderd uit de database
+- **En** is het product niet meer zichtbaar in het overzicht
+
+- Scenario 2 - Product is al verwijderd
+- **Gegeven** het geselecteerde product bestaat niet meer
+- **Wanneer** de beheerder probeert het product te verwijderen
+- **Dan** krijgt de beheerder een foutmelding
+- **En** wordt het product niet nog een keer verwijderd
+
+
 ### Use Case
+Titel: Product verwijderen
+Doel: Beheerder kan via de applicatie producten verwijderen zonder in de code te hoeven duiken.
+Actor: Beheerder
+
+Precondities:
+- Beheerder is ingelogd
+- Product bestaat al in het systeem
+
+Stappen:
+- Beheerder opent productenoverzicht
+- Beheerder selecteert een product
+- Beheerder klikt op "verwijderen"
+- Systeem toont bevestigingsmelding
+- Systeem verwijdert product uit database
+- Product is niet meer te zien op de producten pagina
+
+Alternatieve paden:
+- Beheerder annuleert verwijdering -> product blijft bestaan
+- Product bestaat niet meer -> foutmelding tonen
+
+Postcondities: Het product is succesvol verwijdert uit de database en niet meer zichtbaar in het productenoverzicht
+
+
 ### Domeinmodel
 ### Toestandsdiagram
-### Wireframe
+<img width="486" height="801" alt="image" src="https://github.com/user-attachments/assets/76e3826c-8f89-4fc0-9a31-54c6817a431a" />
 
+Koppeling met user story
+- Bestaand -> Geselecteerd -> Bevestigen -> Verwijderd = product verwijderd
+- Bevestigen -> Bestaand = Verwijdering geannuleerd
+
+Toestandstabel
+| Toestand | Betekenis | Conditie | 
+|----------|-----------|----------|
+|  Bestaand       | Product staat in database      |     Product heeft een geldige ID     |
+|  Geselecteerd       |   Product is geselecteerd voor verwijdering      |   Beheerder heeft product gekozen     |
+|  Bevestigen       |  Systeem wacht op bevestiging       |   verwijder actie gestart  |
+| Verwijderd      |   Product is verwijderd uit database      |  Product bestaat niet meer in het systeem     |
+
+
+### Wireframe
+Een simpele popupmeldingen waarbij je op verwijderen kunt klikken.
+<img width="951" height="552" alt="image" src="https://github.com/user-attachments/assets/eb8c6de4-3c70-4c4b-b0d7-898541010a32" />
+Design van de meldingen zijn flexibel, wijzig  zo nodig.
+<img width="747" height="426" alt="image" src="https://github.com/user-attachments/assets/097c51a4-df12-4b47-8d35-ac9848545647" />
