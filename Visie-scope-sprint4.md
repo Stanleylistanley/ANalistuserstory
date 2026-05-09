@@ -67,5 +67,25 @@ Door middel van een formulier kan de beheerder productinformatie zoals naam, pri
 ## Verwachte resultaat Sprint 4
 Voor sprint 4 is het belangrijkste doel om de functionaliteit van het beheren van producten toe te voegen
 
-## Conclusie
+Uit de analyse van de probleemstelling is dit knelpunt eruit gekomen:
+- De beheerder kan momenteel niet beheren via de applicatie, omdat er geen functionaliteit is om producten toe te voegen, aan te passen of te verwijderen. Hierdoor moeten wijzigingen handmatig via de code worden uitgevoerd, wat inefficiënt en foutgeboelig is.
 
+Deze prioriteit is gekozen, omdat in ons huidige project wij al een producten pagina hebben met daadwerkelijke producten van harm.
+Hierdoor kunnen wij dus verder met het beheren van producten en werken wij in een soort van flow dat zich steeds meer uitbreid van ons huidige werk.
+
+**User stories**
+- Als beheerder wil ik nieuwe producten kunnen toevoegen via de applicatie, zodat de productcatalogus actueel blijft.
+- Als beheerder wil ik bestaande producten kunnen aanpassen, zodat ik fouten kan corrigeren of informatie kan bijwerken
+- Als beheerder wil ik producten kunnen verwijderen, zodat verouderde of niet op voorraad producten niet meer zichtbaar zijn.
+
+**Verwachte resultaten**
+Aan het einde van sprint 4 verwachten wij dit resultaat:
+- Beheerder kan via applicatie producten: toevoegen, aanpassen en verwijderen
+- Login systeem werkt volledig en profiel pagina is daarbij geconnect
+- Beheerder kan meldingen zien in een overzicht
+
+Deze nieuwe functies zorgen ervoor dat de beheerder efficienter en handiger via de applicatie zijn producten kan beheren.
+
+## Conclusie
+Sprint 4 richt zich op het makkelijker maken van het beheren van producten. 
+Daarnaast vormt deze sprint een goede uitbreiding van het huidige werk van ons. De resultaten hiervan laat ook zien dat we langzaam werken naar het uiteindelijke doel: "Het eenvoudiger en overzichtelijker maken van de voorraad"
