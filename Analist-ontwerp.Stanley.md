@@ -91,6 +91,8 @@ Postcondities: Het product is succesvol opgeslagen in de database en is zichtbaa
 
 
 ### Domeinmodel
+<img width="877" height="997" alt="image" src="https://github.com/user-attachments/assets/c5d926d6-8854-447d-9f10-575b4035d23c" />
+
 ### Toestandsdiagram
 <img width="615" height="641" alt="image" src="https://github.com/user-attachments/assets/bdcf90df-4889-4de0-b27a-211f304daef1" />
 
@@ -184,7 +186,8 @@ Postcondities: De aanpassingen zijn succesvol opgeslagen in de database en zijn 
 
 
 ### Domeinmodel
--
+<img width="877" height="997" alt="image" src="https://github.com/user-attachments/assets/540fa922-f428-401c-a1d3-8701386226db" />
+
 ### Toestandsdiagram
 <img width="503" height="684" alt="image" src="https://github.com/user-attachments/assets/3d90f7a4-5ef1-4dfb-896d-42e99bb73683" />
 
@@ -274,6 +277,9 @@ Postcondities: Het product is succesvol verwijdert uit de database en niet meer 
 
 
 ### Domeinmodel
+<img width="877" height="997" alt="image" src="https://github.com/user-attachments/assets/38e7dc48-88fb-489f-9937-3f50417e6940" />
+
+
 ### Toestandsdiagram
 <img width="486" height="801" alt="image" src="https://github.com/user-attachments/assets/76e3826c-8f89-4fc0-9a31-54c6817a431a" />
 
