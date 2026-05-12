@@ -37,15 +37,25 @@ Bij het laten zien van de wireframe van de producten toevoegen pagina zijn er oo
 ## Sprint planning voor sprint 4
 Voor sprint 4 zijn de volgende werkzaamheden gepland. Deze zijn gevormd uit de aantekeningen.
 •	Producten beheren ( Toevoegen, aanpassen, verwijderen)
+
 •	Meldingen in het meldingenoverzicht kunnen opgelost worden
+
 •	Design van gebruiker bewerken en profiel paginas update 
+
 •	Profielpagina koppelen met login
+
 •	Je kunt bepaalde functionaliteiten zien doormiddel van je rol
+
 •	Productenpagina detail de locaties moeten duidelijker. (dropdown met foto)
+
 •	Project op Azure deployen 
+
 •	Filter en searchbar een shared component maken
+
 •	Features mappen aanpassen frontend
+
 •	Documentatie frontend , checklist naar eigenpagina, overdrachtsdocument
+
 •	Testen: JUnit test, axe test
 
 
